@@ -233,6 +233,7 @@ namespace DiplomaApp
 
             try
             {
+                // łączenie z bazą
                 string connectionString = "Server=ttr.skalppg.pl;Database=skalp_ttr;Uid=skalp_dyplomy;Pwd=pK2FOJsE;";
                 MySqlConnection conn = new MySqlConnection(connectionString);
                 conn.Open();
