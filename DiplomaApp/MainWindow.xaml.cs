@@ -229,7 +229,7 @@ namespace DiplomaApp
         private void ConnectWithDB_Click(object sender, RoutedEventArgs e)
         {
 
-            
+
 
             try
             {
@@ -261,9 +261,15 @@ namespace DiplomaApp
             }
             finally
             {
-                
+
             }
 
+        }
+
+        private void button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window1 secondWindow = new Window1();
+            secondWindow.ShowDialog();
         }
     }
 }
