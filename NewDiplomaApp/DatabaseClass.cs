@@ -15,6 +15,7 @@ namespace DiplomaApp
         public MySqlConnection conn;
         public MySqlCommand cmd;
         public MySqlDataReader rdr;
+        public static int counter = 0;
         public string databaseName { get; set; }
        
 
@@ -28,7 +29,9 @@ namespace DiplomaApp
             this.serverName = serverName;
             this.username = username;
             this.password = password;
-           
+
+            countHowMany(); //zliczamy liczbę obiektów tego typu
+
             connectionString = "Server=" + serverName +
                     ";Database=" + databaseName +
                     ";Uid=" + username +
@@ -73,6 +76,11 @@ namespace DiplomaApp
         public void closeConnection()
         {
             conn.Close();
+        }
+
+        public override void countHowMany()
+        {
+            counter++;
         }
 
 

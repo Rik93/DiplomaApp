@@ -18,17 +18,17 @@
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="button" Content="Połącz z bazą" HorizontalAlignment="Left" Margin="23,17,0,0" VerticalAlignment="Top" Width="98" Click="button_Click_2" Grid.Column="2"/>
-                <Button Content="Wczytaj tło" HorizontalAlignment="Left" Margin="23,19,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click" Grid.Column="2" Grid.Row="1"/>
-                <Button x:Name="GeneratePDFs" Content="Generuj pliki" HorizontalAlignment="Left" Margin="23,13,0,0" VerticalAlignment="Top" Width="98" RenderTransformOrigin="-1.547,1.091" Click="Button_Click_1" Grid.Column="2" Grid.Row="3" IsEnabled="False"/>
-                <CheckBox x:Name="checkBoxDb"  Grid.Column="1" HorizontalAlignment="Left" Margin="29,20,0,0" VerticalAlignment="Top" IsEnabled="False"/>
-                <CheckBox x:Name="checkBoxBackground"  Grid.Column="1" HorizontalAlignment="Left" Margin="29,24,0,0" VerticalAlignment="Top" IsEnabled="False" Grid.Row="1"/>
-                <Label x:Name="label" Content="Połączenie z bazą" HorizontalAlignment="Left" Margin="43,17,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label1" Content="Tło do dyplomów" HorizontalAlignment="Left" Margin="43,19,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-                <Label x:Name="label2" Content="Przygotowanie dyplomów" HorizontalAlignment="Left" Margin="-1,13,0,0" VerticalAlignment="Top" Grid.Row="3"/>
-                <Label x:Name="label4" Content="Ścieżka do dyplomów" HorizontalAlignment="Left" Margin="24,19,0,0" Grid.Row="2" VerticalAlignment="Top"/>
-                <CheckBox x:Name="checkBoxPath" IsEnabled="False" Grid.Column="1" HorizontalAlignment="Left" Margin="29,24,0,0" Grid.Row="2" VerticalAlignment="Top"/>
-                <Button x:Name="buttonPath" Content="Wybierz ścieżkę" Grid.Column="2" HorizontalAlignment="Left" Margin="23,19,0,0" Grid.Row="2" VerticalAlignment="Top" Width="98" Click="buttonPath_Click"/>
+                <Button x:Name="button" Content="Połącz z bazą" HorizontalAlignment="Left" Margin="23,43,0,0" VerticalAlignment="Top" Width="98" Click="button_Click_2" Grid.Column="2"/>
+                <Button Content="Wczytaj tło" HorizontalAlignment="Left" Margin="23,44,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click" Grid.Column="2" Grid.Row="1"/>
+                <Button x:Name="GeneratePDFs" Content="Generuj pliki" HorizontalAlignment="Left" Margin="23,38,0,0" VerticalAlignment="Top" Width="98" RenderTransformOrigin="-1.547,1.091" Click="Button_Click_1" Grid.Column="2" Grid.Row="3" IsEnabled="False"/>
+                <CheckBox x:Name="checkBoxDb"  Grid.Column="1" HorizontalAlignment="Left" Margin="29,48,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+                <CheckBox x:Name="checkBoxBackground"  Grid.Column="1" HorizontalAlignment="Left" Margin="29,49,0,0" VerticalAlignment="Top" IsEnabled="False" Grid.Row="1"/>
+                <Label x:Name="label" Content="Połączenie z bazą" HorizontalAlignment="Center" Margin="43,17,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="label1" Content="Tło do dyplomów" HorizontalAlignment="Center" Margin="43,19,0,0" Grid.Row="1" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="label2" Content="Przygotowanie dyplomów" HorizontalAlignment="Center" Margin="-1,13,0,0" VerticalAlignment="Center" Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="label4" Content="Ścieżka do dyplomów" HorizontalAlignment="Center" Margin="24,19,0,0" Grid.Row="2" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxPath" IsEnabled="False" Grid.Column="1" HorizontalAlignment="Left" Margin="29,49,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+                <Button x:Name="buttonPath" Content="Wybierz ścieżkę" Grid.Column="2" HorizontalAlignment="Left" Margin="23,41,0,0" Grid.Row="2" VerticalAlignment="Top" Width="98" Click="buttonPath_Click"/>
             </Grid>
         </GroupBox>
 

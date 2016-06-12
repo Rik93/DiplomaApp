@@ -61,7 +61,8 @@ namespace DiplomaApp
 
 
                 Globals.database = new DatabaseClass(dbName.Text, serverName.Text, userName.Text, hiddenPassword.Password);
-               
+                 
+                Console.WriteLine(DatabaseClass.counter); //ile obiektów klasy DatabaseClass
 
 
                 MessageBox.Show("Poprawnie połączono z bazą.", "Informacja", MessageBoxButton.OK, MessageBoxImage.Information);

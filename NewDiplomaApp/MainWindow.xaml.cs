@@ -30,6 +30,8 @@ namespace DiplomaApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
+    
     public partial class MainWindow : Window
     {
 
@@ -297,9 +299,9 @@ namespace DiplomaApp
             checkBoxPath.IsChecked = true;
             isPathChosen = true;
             Console.WriteLine(Globals.database.isConnected());
-            if (isPathChosen && Globals.database != null  && Globals.database.isConnected()) GeneratePDFs.IsEnabled = true;
+            if (isPathChosen && Globals.database != null && Globals.database.isConnected()) GeneratePDFs.IsEnabled = true;
         }
 
-       
+
     }
 }
