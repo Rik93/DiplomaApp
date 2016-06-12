@@ -247,38 +247,7 @@ namespace DiplomaApp
 
         }
 
-        private void ConnectWithDB_Click(object sender, RoutedEventArgs e)
-        {
-
-            try
-            {
-                // łączenie z bazą
-                string connectionString = "Server=ttr.skalppg.pl;Database=skalp_ttr;Uid=skalp_dyplomy;Pwd=pK2FOJsE;";
-                MySqlConnection conn = new MySqlConnection(connectionString);
-                conn.Open();
-
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = "SELECT * FROM ttr_dyplomy WHERE lastname = \"Troka\"";
-
-                MySqlDataReader rdr = cmd.ExecuteReader();
-
-                while (rdr.Read())
-                {
-                    Console.WriteLine(rdr.GetString(0) + ": "
-                        + rdr.GetString(1) + " " + rdr.GetString(2));
-                }
-
-
-
-                conn.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Błąd połączenia", "Błąd");
-            }
-
-        }
+      
 
         private void button_Click_2(object sender, RoutedEventArgs e)
         {
@@ -286,6 +255,7 @@ namespace DiplomaApp
             Window1 secondWindow = new Window1();
             secondWindow.ShowDialog();
 
+            Console.WriteLine(Globals.database.status);
 
             if (Globals.database != null && Globals.database.isConnected()) checkBoxDb.IsChecked = true;
             if (Globals.database != null && Globals.database.isConnected() && isPathChosen && isPDFloaded) GeneratePDFs.IsEnabled = true;

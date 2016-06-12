@@ -11,7 +11,7 @@ namespace DiplomaApp
     {
 
         private string connectionString;
-
+        public STATE status = STATE.DISCONNECTED;
         public MySqlConnection conn;
         public MySqlCommand cmd;
         public MySqlDataReader rdr;
@@ -44,7 +44,8 @@ namespace DiplomaApp
         public void connect(string connStr)
         {
             conn = new MySqlConnection(connectionString);
-            conn.Open();           
+            conn.Open();
+            if (conn.State == System.Data.ConnectionState.Open) status = STATE.CONNECTED;           
         }
 
         public override int getConnectionStatus()

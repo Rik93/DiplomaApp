@@ -12,7 +12,7 @@ namespace DiplomaApp
         void countHowMany();
     }
 
-    enum STATE { CONNECTED = 0, DISCONNECTED = 1 };
+    public enum STATE { CONNECTED = 0, DISCONNECTED = 1 };
     public abstract class ConnectionClass : HowMany
     {
 
