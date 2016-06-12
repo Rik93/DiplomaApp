@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace DiplomaApp
 {
+
+    interface HowMany
+    {
+        void countHowMany();
+    }
+
     enum STATE { CONNECTED = 0, DISCONNECTED = 1 };
-    public abstract class ConnectionClass
+    public abstract class ConnectionClass : HowMany
     {
 
         public string username { get; set; }
@@ -16,6 +22,7 @@ namespace DiplomaApp
         public string serverName { get; set; }
         public abstract int getConnectionStatus();
         public abstract string getConnectionInfo();
+        public abstract void countHowMany();
 
 
 
