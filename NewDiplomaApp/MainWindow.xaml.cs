@@ -255,7 +255,7 @@ namespace DiplomaApp
             Window1 secondWindow = new Window1();
             secondWindow.ShowDialog();
 
-            Console.WriteLine(Globals.database.status);
+            //Console.WriteLine(Globals.database.status);
 
             if (Globals.database != null && Globals.database.isConnected()) checkBoxDb.IsChecked = true;
             if (Globals.database != null && Globals.database.isConnected() && isPathChosen && isPDFloaded) GeneratePDFs.IsEnabled = true;
@@ -265,10 +265,14 @@ namespace DiplomaApp
         {
             var dialog = new System.Windows.Forms.FolderBrowserDialog();
             System.Windows.Forms.DialogResult result = dialog.ShowDialog();
-            pathToGeneratedPDF = dialog.SelectedPath;
-            checkBoxPath.IsChecked = true;
-            isPathChosen = true;
-            Console.WriteLine(Globals.database.isConnected());
+            if(dialog.SelectedPath != null)
+            {
+                pathToGeneratedPDF = dialog.SelectedPath;
+                checkBoxPath.IsChecked = true;
+                isPathChosen = true;
+                Console.WriteLine(Globals.database.isConnected());
+            }
+            
             if (isPathChosen && Globals.database != null && Globals.database.isConnected()) GeneratePDFs.IsEnabled = true;
         }
 
