@@ -209,8 +209,14 @@ namespace DiplomaApp
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            double posY = (newLabelPosition.Y + (ParticipantNameLabel.ActualHeight / 2) - DiplomaBackground.Margin.Top) / DiplomaBackground.Height;
-            double posX = (newLabelPosition.X - DiplomaBackground.Margin.Left) / DiplomaBackground.Width;
+            //if(newLabelPosition.Y <= 0) newLabelPosition.Y = DiplomaBackground.Margin.Top + DiplomaBackground.Height - ParticipantNameLabel.ActualHeight;
+
+            //double posY = (newLabelPosition.Y + (ParticipantNameLabel.ActualHeight / 2) - DiplomaBackground.Margin.Top) / DiplomaBackground.Height;
+            //double posX = (newLabelPosition.X - DiplomaBackground.Margin.Left) / DiplomaBackground.Width;
+
+
+            double posY = (ParticipantNameLabel.Margin.Top + (ParticipantNameLabel.ActualHeight / 2) - DiplomaBackground.Margin.Top) / DiplomaBackground.Height;
+
 
             Globals.database.selectFromDatabase();
 

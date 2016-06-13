@@ -59,8 +59,11 @@ namespace DiplomaApp
                     ";Uid=" + userName.Text +
                     ";Pwd=" + hiddenPassword.Password + ";";
 
+                if(hiddenPassword.IsVisible) Globals.database = new DatabaseClass(dbName.Text, serverName.Text, userName.Text, hiddenPassword.Password);
+                else Globals.database = new DatabaseClass(dbName.Text, serverName.Text, userName.Text, visiblePassword.Text);
 
-                Globals.database = new DatabaseClass(dbName.Text, serverName.Text, userName.Text, hiddenPassword.Password);
+
+                //Globals.database = new DatabaseClass(dbName.Text, serverName.Text, userName.Text, hiddenPassword.Password);
                  
                 Console.WriteLine(DatabaseClass.counter); //ile obiektów klasy DatabaseClass
 

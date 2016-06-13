@@ -33,7 +33,7 @@
         </GroupBox>
 
         <Image x:Name="DiplomaBackground" HorizontalAlignment="Left"  Margin="23,20,0,0" VerticalAlignment="Top" Width="315" Height="446"/>
-        <Label x:Name="ParticipantNameLabel"  Content="Imię i nazwisko" HorizontalAlignment="Left" Margin="232,52,0,0" VerticalAlignment="Top" Width="91" PreviewMouseUp="Label_PreviewMouseUp" PreviewMouseMove="Label_PreviewMouseMove" PreviewMouseLeftButtonDown="ParticipantNameLabel_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="ParticipantNameLabel_PreviewMouseLeftButtonUp" MouseLeave="ParticipantNameLabel_MouseLeave" Visibility="Hidden"/>
+        <Label x:Name="ParticipantNameLabel"  Content="Imię i nazwisko" HorizontalAlignment="Left" Margin="139,172,0,0" VerticalAlignment="Top" Width="91" PreviewMouseUp="Label_PreviewMouseUp" PreviewMouseMove="Label_PreviewMouseMove" PreviewMouseLeftButtonDown="ParticipantNameLabel_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="ParticipantNameLabel_PreviewMouseLeftButtonUp" MouseLeave="ParticipantNameLabel_MouseLeave" Visibility="Hidden"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="445" Margin="23,20,0,0" VerticalAlignment="Top" Width="315">
             <Label x:Name="Description" Content="Podgląd dyplomu" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="29.333" FontFamily="Tahoma"/>
         </Border>
