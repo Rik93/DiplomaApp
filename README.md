@@ -4,6 +4,7 @@ Aplikacja stworzona do przygotowywania PDF'ów z imieniem i nazwiska zawodnika. 
 W tym celu wykorzystany jest zewnętrzny serwer.
 
 Jak działa aplikacja?
+
 1. Wpierw łączymy się z bazą danych (dane są wpisane w apkę, żeby nie było problemów z łączeniem). Baza jest akurat fikcyjna, utworzona na cele tego projektu.
 
 2. Wybieram plik PDF, któr posłuży nam jako tło dyplomu (plik uczestnictwo.pdf).
