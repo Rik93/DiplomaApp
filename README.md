@@ -9,10 +9,10 @@ Jak działa aplikacja?
 
 2. Wybieram plik PDF, któr posłuży nam jako tło dyplomu (plik uczestnictwo.pdf).
 
-2a. Po otworzeniu pliku, pojawi się na podglądzie label "imię i nazwisko", przesuwam je w dowolne miejsce, w którym ma się pojawić imię i nazwisko uczestnika na dyplomie.
+3. Po otworzeniu pliku, pojawi się na podglądzie label "imię i nazwisko", przesuwam je w dowolne miejsce, w którym ma się pojawić imię i nazwisko uczestnika na dyplomie.
 
-3. Wybieramy folder, w którym będą przechowywane dyplomy.
+4. Wybieramy folder, w którym będą przechowywane dyplomy.
 
-4. Generujemy pliki PDF.
+5. Generujemy pliki PDF.
 
 Jako szansę rozwoju projektu widzę dodanie automatycznego wysyłania dyplomów na maile.
